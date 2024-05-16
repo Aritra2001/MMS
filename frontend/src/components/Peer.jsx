@@ -16,7 +16,7 @@ function Peer({ peer }) {
         playsInline
       />
       <div className="peer-name">
-        {peer.name} {peer.isLocal ? "(You)" : `${name}`}
+        {peer.name} {name}
       </div>
     </div>
   );
