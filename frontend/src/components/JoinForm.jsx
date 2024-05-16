@@ -22,6 +22,8 @@ function JoinForm() {
       roomCode = '',
     } = inputValues
 
+    localStorage.setItem('user', inputValues.name);
+
     // use room code to fetch auth token
     const authToken = await hmsActions.getAuthTokenByRoomCode({ roomCode })
 

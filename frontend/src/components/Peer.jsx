@@ -1,6 +1,8 @@
 import { useVideo } from "@100mslive/react-sdk";
 
 function Peer({ peer }) {
+
+  var name = localStorage.getItem('user');
   const { videoRef } = useVideo({
     trackId: peer.videoTrack
   });
@@ -14,7 +16,7 @@ function Peer({ peer }) {
         playsInline
       />
       <div className="peer-name">
-        {peer.name} {peer.isLocal ? "(You)" : ""}
+        {peer.name} {peer.isLocal ? "(You)" : `${name}`}
       </div>
     </div>
   );
