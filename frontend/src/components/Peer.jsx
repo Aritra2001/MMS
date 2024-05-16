@@ -2,7 +2,6 @@ import { useVideo } from "@100mslive/react-sdk";
 
 function Peer({ peer }) {
 
-  var name = localStorage.getItem('user');
   const { videoRef } = useVideo({
     trackId: peer.videoTrack
   });

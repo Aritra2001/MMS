@@ -190,3 +190,18 @@ form h2,
   column-gap: 0.3rem;
   margin-right: 4rem;
 }
+
+#count {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.counter {
+  background-color: #686767;
+  border-radius: 50%;
+  width: 20px;
+  font-size: small;
+  margin-bottom: 2rem;
+  margin-left: -10px;
+}
