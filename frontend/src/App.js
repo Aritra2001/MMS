@@ -19,7 +19,6 @@ function App() {
       if (isConnected) {
         hmsActions.leave();
       }
-      localStorage.removeItem('user');
     };
   }, [hmsActions, isConnected]);
 
